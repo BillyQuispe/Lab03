@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(200, 207, 184);
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline overline;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.formulario{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+#dolar, #euro{
+    width: 50px;
+    height: 10px;
+}
+#boton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10%;
+    font-size: 15px;
+}

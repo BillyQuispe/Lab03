@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Trabajopropuesto.css">
+        <title>CASA DE CAMBIO</title>
+        <script type="text/javascript">
+            function convertir() {
+                var valor = parseInt(document.getElementById("valor").value);
+                var resultado = 0;
+                var dolar = 3.74;
+                var euro = 4.07;
+                if (document.getElementById("dolar").checked){
+                    resultado = valor / dolar;
+                    alert("El Cambio de Soles a Dolares es: $" + resultado.toFixed(2));
+                }
+                else if (document.getElementById("euro").checked){
+                    resultado = valor / euro;
+                    alert("El Cambio de Soles a Euros es: " + resultado.toFixed(2));
+                }
+                else{
+                    alert("Tienes que ingresar un monto")
+                }
+        }
+        </script>
+    </head>
+<body>
+    <h3>CASA DE CAMBIO</h3>
+    <form class="formulario">
+        <p>Seleccionar moneda de cambio:</p>
+        <input type="radio" name = "cambio" id = "dolar">Dolar
+        <input type="radio" name = "cambio" id = "euro">Euro
+        <p>Ingrese monto en soles:</p>
+        <input type= "number" id = "valor" min = "1" max = "100000">
+        <input type= "button" id = "boton" value = "Cotizar" onclick = "convertir()">
+    </form>
+</body>
+</html>
